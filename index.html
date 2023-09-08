@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ESTILOS\index.css">
+    <link rel="stylesheet" href="ESTILOS\form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+    <script src="JS\js.js" defer></script>
     <title>Curriculum Vitae</title>
 </head>
 <body>
-   <nav>Fulanito de tal</nav> 
+<section class="container">
+
+   <header class="nombre">Fulanita de tal</header> 
 
     <aside>
-        <div class="fotoCV"
-            <href ...></href>
+
+        <div class="fotoCV">
+        <img src="IMG\foto.cv.jpg" alt="Foto CV">
         </div>
+
         <div class="indice">
             <h1>Aptitudes</h1>
             <ul>
@@ -24,9 +34,9 @@
                     </ul>
                 <li>BackEnd Dev</li>
                     <ul>
-                        <li>xxx</li>
-                        <li>xxx</li>
-                        <li>xxx</li>
+                        <li>MySQL</li>
+                        <li>Python</li>
+                        <li>Django</li>
                     </ul>    
             </ul>
             <h1>Experiencia</h1>
@@ -37,12 +47,14 @@
         </div>
     </aside>
 
-    <section>
+    <main>
         <div class="expectativas">
+            <h1>Expectativas</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, porro nesciunt provident vitae quod, odit sunt odio exercitationem ut incidunt autem repellendus esse deleniti, aperiam ratione eos delectus neque. Fugiat quia accusantium ipsam repudiandae aut! Corrupti, distinctio natus sit, vero vel minus similique amet ullam, nam temporibus illo quas iure?</p>
         </div>
 
         <div class="titulos">
+            <h1 style="text-align: center">Títulos</h1>
             <ul>
                 <li>blablabla FrontEnd Dev</li>
                 <li>blablabla JavaScript</li>
@@ -54,10 +66,12 @@
         </div>
 
         <div class="experiencia">
+            <h1>Experiencias</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, nobis maxime alias unde ad dolore doloremque nesciunt. Minus nisi ipsum possimus esse quibusdam atque voluptatum repellendus porro vitae, nobis veritatis, natus autem exercitationem id molestias cupiditate laudantium numquam cumque fuga error accusantium. Facere impedit rem voluptatum provident nulla in! Labore!
         </div>
 
         <div class="datos">
+            <h1>Datos Personales</h1>
             <p>Fulanito de Tal</p><br>
             <p>25 años</p><br>
             <p>mail.mail@mail.com</p><br>
@@ -65,11 +79,34 @@
         </div>
 
         <div class="contacto">
-            <!-- insertar formulario aqui --> 
+            <h1>Contactame</h1>
+            <!-- insertar formulario aqui -->
+            
+            <form id="Formulario_ContactoPersonal" action="https://formspree.io/f/xknaeyrk" method="POST">
+                <label>Email:</label>
+                <input type="email" name="email" required /><br><br>
+            
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+            
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+            
+                <label for="celular">Número de celular:</label>
+                <input type="tel" id="celular" name="celular" ><br><br>
+            
+                <label>Dejame un mensaje:</label><br><br>
+                <textarea name="Mensaje" rows="10" cols="50">Espero tu contacto!</textarea>
+                <br><br>
+                
+                <button id="my-form-button">Enviar</button>
+                <p id="my-form-status"></p><br><br>
+            </form>
+
         </div>
 
-    </section>
-
+    </main>
+</section>
 </body>
 
 <footer>Copyrigth 2023 MVD</footer>

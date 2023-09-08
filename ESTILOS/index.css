@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.container{
+    display:grid;
+    grid-template: 120px 1fr 2fr 2fr 4rem / 200px 2fr 2r 200px ;
+    grid-template-areas:    "nombre nombre nombre nombre"
+                            "fotoCV expectativas expectativas expectativas"
+                            "indice titulos titulos datos"
+                            "indice experiencia experiencia contacto"
+                            "footer footer footer footer";
+    grid-gap: 5px;
+    height: 100vh;
+    font-size: 100%;
+}
+
+.nombre {
+    grid-area: nombre;
+    font-size: 4rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    justify-content: center;
+}
+
+.fotoCV {
+    grid-area: fotoCV;
+    justify-content: center;   
+    background-color: rgb(246, 240, 255);
+    width: 100%;
+}
+
+.expectativas {
+    grid-area: expectativas;
+    justify-content: space-around;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.indice {
+    grid-area: indice;
+    justify-content: space-around;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 100%;
+    text-align: left;
+    justify-content: center;
+}
+
+.titulos {
+    grid-area: titulos;
+    justify-content: space-around;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 100%;
+    text-align: left;
+    justify-content: center;
+}
+
+.datos {
+    grid-area: datos;
+    justify-content: space-around;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 100%;
+    text-align: left;
+    justify-content: center;
+}
+
+.experiencia {
+    grid-area: experiencia;
+    justify-content: space-around;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.contacto {
+    grid-area: contacto;
+    justify-content: space-around;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 100%;
+    text-align: left;
+    justify-content: center;
+}
+
+.footer {
+    grid-area: footer;
+    display:inline;
+    text-align: center;
+}
+
+ /* Dispositivos grandes (laptops/PCs, 992px y superiores) */
+ @media only screen and (min-width: 992px) {
+    .container{
+        display: grid;
+        grid-template: 120px 1fr 2fr 2fr 1fr 4rem / 200px 1fr 1fr 1fr;
+        grid-template-areas:    "nombre nombre nombre nombre"
+                                "fotoCV expectativas expectativas expectativas"
+                                "indice titulos titulos datos"
+                                "indice experiencia experiencia contacto"
+                                "footer footer footer footer";
+        grid-gap: 5px;
+        height: 100vh;
+        font-size: 100%;
+    }
+    .container .nombre{
+        font-size: 5rem;}
+        .container .header ul li{
+        font-size: 1.5rem;}
+  }
